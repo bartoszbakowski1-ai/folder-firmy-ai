@@ -7,23 +7,37 @@ Materiał ze szkolenia „AI w codziennej pracy małej firmy” (WM:HTC, Olsztyn
 
 | Plik | Po co |
 |---|---|
-| `AGENTS.md` | Wiedza o firmie i zasady pracy AI. Czyta go ChatGPT i Codex |
+| `AGENTS.md` | Wiedza o firmie, zasady pracy AI, hasła i lista skilli. Czyta go ChatGPT i Codex |
 | `CLAUDE.md` | Wczytuje `AGENTS.md`, więc Claude ma tę samą wiedzę |
-| `komendy/start.md` | Co AI robi na hasło „start”: stan firmy, kalendarz, poczta, 3 priorytety |
-| `komendy/koniec.md` | Co AI robi na hasło „koniec”: podsumowanie, aktualizacja stanu |
-| `pamiec/STAN.md` | Co się teraz dzieje w firmie: priorytety, otwarte sprawy, decyzje |
-| `sesje/` | Podsumowania rozmów, jeden plik na sesję |
-| `.claude/commands/` | Komendy `/start` i `/koniec` w Claude Code |
+| `komendy/pierwsze-uruchomienie.md` | AI robi z Tobą wywiad i samo wypełnia `AGENTS.md` i `pamiec/STAN.md` |
+| `komendy/start.md` | „start”: stan firmy, kalendarz, poczta, 3 priorytety |
+| `komendy/workflow.md` | „workflow”: zapisuje powtarzalne zadanie jako plik w `workflowy/` |
+| `komendy/koniec.md` | „koniec”: podsumowanie rozmowy i aktualizacja stanu |
+| `pamiec/STAN.md` | Co się teraz dzieje w firmie |
+| `workflowy/` | Twoje zadania rozpisane krok po kroku (szablon w środku) |
+| `sesje/` | Podsumowania rozmów |
+| `.claude/skills/` | Gotowe skille: karta głosu, karta oferty, teksty reklam Meta |
+| `.claude/commands/` | Te same hasła jako `/start`, `/koniec` itd. w Claude Code |
+
+Folder `.claude` jest ukryty. Na Macu pokażesz go w Finderze skrótem Cmd + Shift + kropka.
 
 ## Jak zacząć
 
 1. Pobierz: zielony przycisk **Code > Download ZIP** (albo **Use this template**, jeśli masz konto GitHub).
 2. Rozpakuj w dowolnym miejscu, np. w Dokumentach.
-3. Uzupełnij `AGENTS.md` (pola w nawiasach kwadratowych). Możesz wkleić instrukcje z kroku 2b szkolenia.
-4. Otwórz folder w aplikacji Claude na komputerze, w Claude Code, w ChatGPT albo w Codex.
-5. Na początku pracy napisz „start”, na końcu „koniec”.
+3. Otwórz folder w aplikacji Claude na komputerze, w Claude Code, w ChatGPT albo w Codex.
+4. Napisz **pierwsze uruchomienie**. AI zrobi krótki wywiad i samo wypełni `AGENTS.md`.
+5. Na co dzień: **start** na początku pracy, **workflow** gdy zadanie ma się powtarzać, **koniec** na końcu.
 
-Prompty ze szkolenia: https://bartbakowski.com/zasoby/ai-w-pracy
+## Skille w paczce
+
+| Skill | Co robi | Jak uruchomić |
+|---|---|---|
+| Karta głosu | Twój styl pisania z Twoich maili, nagrań albo postów, żeby AI pisało jak Ty | „zróbmy moją kartę głosu” |
+| Karta oferty | Twoja oferta w jednym pliku: co, komu, za jaki efekt, za ile | „zróbmy kartę oferty” |
+| Teksty reklam Meta | Reklamy na Facebooka i Instagrama po polsku, pod 5 poziomów świadomości klienta | „napisz reklamę dla [produkt]” |
+
+Więcej skilli: https://bartbakowski.com/wiedza/skille-do-claude
 
 ## Zasady pracy AI (wpisane w AGENTS.md)
 

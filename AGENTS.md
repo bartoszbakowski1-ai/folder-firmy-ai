@@ -24,6 +24,21 @@ Czyta go ChatGPT/Codex (AGENTS.md) i Claude (CLAUDE.md wczytuje ten plik), więc
 ## Gdzie co leży w tym folderze
 - `pamiec/STAN.md` - co się teraz dzieje: priorytety, otwarte sprawy, ostatnie decyzje.
 - `sesje/` - podsumowania rozmów, jeden plik na sesję.
-- `komendy/start.md` i `komendy/koniec.md` - co robisz na hasło „start” i „koniec”.
+- `workflowy/` - moje powtarzalne zadania rozpisane krok po kroku.
+- `komendy/` - procedury na hasła poniżej.
+- `.claude/skills/` - gotowe umiejętności (skille).
 
-Na hasło **start** wykonaj `komendy/start.md`. Na hasło **koniec** wykonaj `komendy/koniec.md`.
+## Hasła
+- **pierwsze uruchomienie** - wykonaj `komendy/pierwsze-uruchomienie.md`.
+- **start** - wykonaj `komendy/start.md`.
+- **workflow** - wykonaj `komendy/workflow.md`.
+- **koniec** - wykonaj `komendy/koniec.md`.
+
+## Skille
+Claude wczytuje je sam. W ChatGPT i Codex: gdy temat pasuje, przeczytaj odpowiedni plik SKILL.md i działaj według niego.
+- `.claude/skills/karta-glosu/` - mój styl pisania (tone of voice), plik karta-glosu.md.
+- `.claude/skills/karta-oferty/` - moja oferta w jednym pliku, karta-oferty.md.
+- `.claude/skills/meta-ads-copy-pl/` - teksty reklam na Facebooka i Instagrama po polsku.
+
+## Workflowy
+- (pusto, dopisuje się po haśle „workflow”)
